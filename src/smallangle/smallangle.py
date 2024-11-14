@@ -2,7 +2,6 @@ import click
 import numpy as np
 from numpy import pi
 import pandas as pd
-import sys
 
 @click.group()
 def cmd_group():
