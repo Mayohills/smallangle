@@ -3,8 +3,6 @@ import numpy as np
 from numpy import pi
 import pandas as pd
 
-print('Do')
-
 def sin(number):
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
