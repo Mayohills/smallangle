@@ -11,6 +11,11 @@ def cmd_group():
 @cmd_group.command()
 @click.option("-n", "--number", default = 10)
 def sin(number):
+    """Gives you the sine of NUMBER points between 0 and 2pi
+
+    Args:
+        number (int): The amount of points between 0 and 2pi
+    """    
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -18,6 +23,11 @@ def sin(number):
 @cmd_group.command()
 @click.option("-n", "number", default = 10)
 def tan(number):
+    """Gives you the tangent of NUMBER points between 0 and 2pi
+
+    Args:
+        number (int): The amount of points between 0 and 2pi
+    """    
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
